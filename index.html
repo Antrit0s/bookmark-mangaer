@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+
+<body>
+    <div class="container">
+        <h1 class="py-2 d-flex flex-column justify-content-center align-items-center mt-5 display-2 position-relative">
+            Bookmarks</h1>
+
+        <div class="adding-new-book d-flex flex-column justify-content-center align-items-center gap-4 py-4">
+            <h2><i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="mb-3 w-100">
+                <label for="siteName" class="form-label">Site Name</label>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+            </div>
+            <div class="mb-3 w-100">
+                <label for="siteurl" class="form-label">Site url</label>
+                <input type="text" class="form-control" id="siteurl" placeholder="Bookmark url">
+            </div>
+            <button onclick="saveWebsite()" class="btn btn-outline-danger px-5 ">submit</button>
+        </div>
+
+
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+                <tr>
+                    <th>index</th>
+                    <th>website Name</th>
+                    <th>visit</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
