@@ -20,8 +20,9 @@ function display (){
                 <td><button onclick="visit('${websiteList[i].link}')" class="btn btn-success">visit</button></td>
                 <td><button onclick="remove(${i})" class="btn btn-danger">remove</button></td>
             </tr>`
-            document.getElementById("table").innerHTML=cartona;
+            
     }
+    document.getElementById("table").innerHTML=cartona;
 }
 // 
 function remove (index) {
